@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student-Info</title>
+    <!-- MATERIAL CDN -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="{% static 'dist/css/style.css' %}">
+    <script src="https://kit.fontawesome.com/f5a86828b7.js" crossorigin="anonymous"></script>
+</head>    
+<body>
+  <section class="header">
+  <nav>
+    <a href="/"><img src="{% static 'dist/img/1.png' %}"></a>
+    <h2>Student<span class="danger">Info</span></h2>
+    <div class="nav-links" id="navLinks">  
+      <!-- <span class="material-icons-sharp" onclick="hideMenu()">close</span> -->
+      <ul>
+        <li><a href="">HOME</a></li>
+        <li><a href="about">ABOUT</a></li>
+        <li><a href="contact">CONTACT</a></li>
+        <li><a href="login">LOGIN</a></li>
+      </ul>
+    </div>
+    <!-- <span class="material-icons-sharp" onclick="showMenu()">menu</span> -->
+  </nav>
+  <div class="text-box">
+    <h1><b></b>Student Infotainment System</b></h1>
+    <p style="font-size: large;",font-weight:700>A student infotainment system (SIS) is a collection 
+      of computer instructions, specially designed to 
+      manage the day-to-day administrative tasks of 
+      universities/colleges. The main aim of this project 
+      to maintain the daily activities along with 
+      managing all the resources and information on a 
+      single platform.</p>
+  </div>
+  </section>
+</body>
+</html>
+
+{% endblock content %}

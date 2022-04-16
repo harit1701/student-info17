@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student-Info</title>
+    <!-- MATERIAL CDN -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="{% static 'dist/css/about_style.css' %}">
+    <script src="https://kit.fontawesome.com/f5a86828b7.js" crossorigin="anonymous"></script>
+</head>    
+<body>
+  <section class="sub-header">
+  <nav>
+    <a href="index.html"><img src="{% static 'dist/img/1.png' %}"></a>
+    <h2>Student<span class="danger">Info</span></h2>
+    <div class="nav-links" id="navLinks">  
+      <!-- <span class="material-icons-sharp" onclick="hideMenu()">close</span> -->
+      <ul>
+        <li><a href="/">HOME</a></li>
+        <li><a href="/about">ABOUT</a></li>
+        <li><a href="/contact">CONTACT</a></li>
+        <li><a href="/login">LOGIN</a></li>
+      </ul>
+    </div>
+    <!-- <span class="material-icons-sharp" onclick="showMenu()">menu</span> -->
+  </nav>
+  <h1>About</h1>
+  </section>
+   
+    <section class="about-us">
+      
+      <div class="row">
+          <div class="about-col">
+              <h1>Student infotainment</h1>
+                <p>One-point access to entire information related to any student in the university/college. 
+
+                Colleges can use this system for maintaining a simplified record of each and every student who has studied at the college. 
+                
+                This one system will help teachers gather the required information of a particular student with great ease. 
+                
+                Parents will also be able to access all the results/complaints/achievements from one single point.env</p>
+            <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+          </div>
+          <div class="about-col">
+            <img src="{% static 'dist/img/about.jpg' %}">
+      </div>
+     </div>
+    
+
+
+    </section>
+ 
+</body>
+</html>
+
+{% endblock content %}
